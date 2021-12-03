@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+	/* min-height: 408px;
+	min-width: 612px; */
+	border: 2px solid red;
+}
+
+img {
+	width: 100%;
+}
