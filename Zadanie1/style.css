@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+button {
+	display: block;
+	margin: 30px auto;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+table {
+	margin: auto;
+}
+
+tr,
+td {
+	border: 2px solid black;
+}
