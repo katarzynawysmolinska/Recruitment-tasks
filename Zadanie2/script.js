@@ -48,6 +48,7 @@ function setErrorFor(input, message) {
 	const small = formControl.querySelector("small");
 
 	small.innerText = message;
+	small.className = "visible";
 
 	formControl.className = "form-control error";
 }
