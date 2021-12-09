@@ -1,6 +1,6 @@
 const button = document.querySelector("button");
 const evenTd = document.querySelector(".even");
-const oddTd = document.querySelector('.odd');
+const oddTd = document.querySelector(".odd");
 
 const evenNumbers = [];
 const oddNumbers = [];
@@ -8,7 +8,7 @@ const oddNumbers = [];
 const render = () => {
 	evenTd.textContent = "";
 	oddTd.textContent = "";
-	for (i = 0; i < 1; i++) {
+	for (i = 0; i < 20; i++) {
 		const number = Math.floor(Math.random() * 100 + 1);
 
 		if (number % 2 === 0) {

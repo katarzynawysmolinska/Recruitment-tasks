@@ -23,3 +23,37 @@ tr,
 td {
 	border: 2px solid black;
 }
+
+/* .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"b1 b2"
+		"b3 b4";
+	width: 180px;
+	height: 180px;
+	margin: auto;
+}
+
+.wrapper div {
+	border: 2px solid black;
+	width: 160px;
+	height: 90px;
+}
+
+.wrapper div:nth-child(1) {
+	grid-area: b1;
+}
+
+.wrapper div:nth-child(2) {
+	grid-area: b2;
+}
+
+.wrapper div:nth-child(3) {
+	grid-area: b3;
+}
+
+.wrapper div:nth-child(4) {
+	grid-area: b4;
+} */
