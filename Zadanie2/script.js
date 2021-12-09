@@ -55,5 +55,7 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
+	const small = formControl.querySelector("small");
 	formControl.className = "form-control success";
+	small.className = "";
 }
