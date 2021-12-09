@@ -4,12 +4,6 @@
 	box-sizing: border-box;
 }
 
-div {
-	/* min-height: 408px;
-	min-width: 612px; */
-	border: 2px solid red;
-}
-
 img {
 	position: fixed;
 	left: 0;
