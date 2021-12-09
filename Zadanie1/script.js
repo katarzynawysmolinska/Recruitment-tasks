@@ -1,38 +1,40 @@
-const button = document.querySelector("button");
-const evenTd = document.querySelector(".even");
-const oddTd = document.querySelector(".odd");
+document.addEventListener("DOMContentLoaded", () => {
+	const button = document.querySelector("#generate-numbers");
+	const evenTd = document.querySelector("#even");
+	const oddTd = document.querySelector("#odd");
 
-const evenNumbers = [];
-const oddNumbers = [];
+	const evenNumbers = [];
+	const oddNumbers = [];
 
-const render = () => {
-	evenTd.textContent = "";
-	oddTd.textContent = "";
-	for (i = 0; i < 20; i++) {
-		const number = Math.floor(Math.random() * 100 + 1);
+	const render = () => {
+		evenTd.innerHTML = "";
+		oddTd.innerHTML = "";
 
-		if (number % 2 === 0) {
-			evenNumbers.push(number);
-		} else {
-			oddNumbers.push(number);
+		let i = 0;
+		const loopLength = 20;
+
+		for (i; i < loopLength; i++) {
+			const number = Math.floor(Math.random() * 100 + 1);
+
+			if (number % 2 === 0) oddNumbers.push(number);
+			else evenNumbers.push(number);
 		}
-	}
 
-	const evenP = document.createElement("p");
-	evenP.textContent = "";
-	evenTd.appendChild(evenP);
-	// p.textContent = number;
-	const sortedEvenArray = evenNumbers.sort();
-	evenP.textContent = sortedEvenArray;
+		const sortedOddArray = oddNumbers.sort((a, b) => (a > b ? 1 : -1));
+		const sortedEvenArray = evenNumbers.sort((a, b) => (a > b ? 1 : -1));
 
-	const oddP = document.createElement("p");
-	oddP.textContent = "";
-	oddTd.appendChild(oddP);
-	// p.textContent = number;
-	const sortedOddArray = oddNumbers.sort();
-	oddP.textContent = sortedOddArray;
-};
+	
+		evenTd.innerHTML = `
+		<ul>
+		  ${sortedEvenArray.map(item => `<li>${item}</li>`).join("")}
+		</ul>
+		`;
+		oddTd.innerHTML = `
+		<ul>
+		  ${sortedOddArray.map(item => `<li>${item}</li>`).join("")}
+		</ul>
+		`;
+	};
 
-button.addEventListener("click", render);
-
-//użyj metody forEach
+	button.addEventListener("click", render);
+});

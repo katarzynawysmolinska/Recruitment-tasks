@@ -15,16 +15,7 @@ button {
 	border-radius: 20px;
 }
 
-table {
-	margin: auto;
-}
-
-tr,
-td {
-	border: 2px solid black;
-}
-
-/* .wrapper {
+.wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -39,7 +30,7 @@ td {
 .wrapper div {
 	border: 2px solid black;
 	width: 160px;
-	height: 90px;
+	min-height: 30px;
 }
 
 .wrapper div:nth-child(1) {
@@ -56,4 +47,8 @@ td {
 
 .wrapper div:nth-child(4) {
 	grid-area: b4;
-} */
+}
+
+ul {
+	list-style-type: none;
+}
